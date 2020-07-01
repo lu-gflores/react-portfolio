@@ -1,0 +1,13 @@
+.footer {
+    padding: 3rem 0;
+     text-align: center;
+     margin-right: auto;
+     margin-left: auto;
+     padding-left: 20px;
+     padding-right: 20px;
+     max-height: 50px;
+ }
+
+.icon-link {
+    margin: 20px 10px;
+  }
