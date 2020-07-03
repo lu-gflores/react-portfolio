@@ -30,7 +30,7 @@ const NavBar = () => {
             </li>
             
             <li className='navbar-item'>
-              <Link to='/'
+              <Link to='/portfolio'
                 className={window.location.pathname === '/' || window.location.pathname === '/portfolio'
                   ? 'nav-link active' : 'nav-link'
                 }
@@ -40,7 +40,7 @@ const NavBar = () => {
 
             </li>
             <li className='navbar-item'>
-              <Link to='/'
+              <Link to='/contact'
                 className={window.location.pathname === '/' || window.location.pathname === '/contact'
                   ? 'nav-link active' : 'nav-link'
                 }
