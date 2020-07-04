@@ -1,23 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
+import '../styles/NavBar.css'
 
 const NavBar = () => {
+
+  const [isActive, setisActive] = useState(false);
+
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-brand" to="/">
           George Flores
         </Link>
+
         {/*Need to set up hamburger style for links*/}
-        {/* <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
+        <label 
+        onClick= {()=>setisActive(!isActive)}
+        role="button" 
+        className={`navbar-burger burger ${isActive ? "is-active" : ""}`} 
+        aria-label="menu" 
+        aria-expanded="false"
+        htmlFor="nav-toggle-state">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a> */}
-
-
+        </label>
       </div>
-        <div className="navbar-menu">
+
+        <div  className={`navbar-menu ${isActive ? "is-active" : ""}`}>
           <ul className="navbar-end">
             <li className='navbar-item'>
               <Link to='/'

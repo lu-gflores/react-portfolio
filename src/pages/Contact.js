@@ -29,6 +29,7 @@ class Contact extends Component {
     render() {
         return (
             <form className="form">
+            <h1>Contact me</h1>
                 <section className="field">
                     <label className="label">Name</label>
                     <div className="control">
@@ -37,7 +38,7 @@ class Contact extends Component {
                 </section>
 
                 <section className="field">
-                <lable className="label">Email</lable>
+                <label className="label">Email</label>
                 <div className="control has-icons-left has-icons-right">
                     <input className="input" type="email" name="email" placeholder="someone@example.com"/>
                     <span className="icon is-small is-left">
