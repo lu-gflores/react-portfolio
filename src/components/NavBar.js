@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
@@ -8,12 +8,12 @@ const NavBar = () => {
         <Link className="navbar-brand" to="/">
           George Flores
         </Link>
-        
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        {/*Need to set up hamburger style for links*/}
+        {/* <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </a> */}
 
 
       </div>
@@ -50,9 +50,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-
-
-
     </nav>
 
 
