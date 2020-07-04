@@ -56,12 +56,12 @@ class Contact extends Component {
                     </div>
                 </section>
                 
-                <section class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link">Submit</button>
+                <section className="field is-grouped">
+                    <div className="control">
+                        <button className="button is-link">Submit</button>
                     </div>
-                    <div class="control">
-                        <button class="button is-link is-light">Cancel</button>
+                    <div className="control">
+                        <button className="button is-link is-light">Cancel</button>
                     </div>
                 </section>
 
