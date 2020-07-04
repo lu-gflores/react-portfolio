@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/myAvatar.jpg"
+import Avatar from "../images/myAvatar.jpg"
 
 const About = () => {
     return (
@@ -9,14 +9,11 @@ const About = () => {
         <div className="columns is-mobile is-centered">
             <div className="column is-half has-text-centered">
             <figure className="image is-128x128 is-inline-block">
-            <img className="is-rounded" src={Image} alt="Avatar of George Flores"/>
+            <img className="is-rounded" src={Avatar} alt="Avatar of George Flores"/>
         </figure>
             </div>
         </div>
         
-        
-     
-
         <p className="content is-medium">
             Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed
             malesuada molestie velit ac viverra. Quisque a ullamcorper purus. Curabitur luctus mi
