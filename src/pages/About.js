@@ -1,10 +1,10 @@
 import React from "react";
-import Avatar from "../images/myAvatar.jpg"
+import Avatar from "../images/avatar.jpg"
 
 const About = () => {
     return (
         <div className="container">
-        <div className="notification">
+       
 
         <div className="columns is-mobile is-centered">
             <div className="column is-half has-text-centered">
@@ -22,7 +22,7 @@ const About = () => {
             Aliquam blandit mi eu urna scelerisque, vitae volutpat ligula ultricies. Maecenas vel
             porta augue. Fusce mauris ex, dignissim et lacinia ut, tempus eget nibh.
             </p>
-        </div>
+       
            
         </div>
 

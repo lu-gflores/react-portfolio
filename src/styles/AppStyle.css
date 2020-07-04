@@ -3,3 +3,7 @@
     flex-direction: column;
     min-height: 100vh;
   }
+  body {
+    background: #000 url('../images/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+  }

@@ -1,76 +1,56 @@
-import React, { Component } from 'react'
+import React from "react";
 
-class Contact extends Component {
-    state = {
-        fullName: "",
-        email: "",
-        message: ""
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: ""
     };
+  }
 
-    handleInputChange = event => {
-        let value = event.target.value;
-        const name = event.target.name;
+  render() {
+    const { status } = this.state;
+    return (
+      <form
+        className="form"
+        onSubmit={this.submitForm}
+        action="https://formspree.io/xqkyyqqv"
+        method="POST"
+      >
+        <section  className="field">
+        <label className="label">Email:</label>
+        <input className="input" type="email" name="email" />
+        </section>
+      
+        <section className="field">
+        <label className="label">Message:</label>
+        <textarea className="textarea" type="text" name="message" />
+        </section>
+      
 
-        this.setState({
-            [name]: value
-        });
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button className="button is-link">Submit</button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+      </form>
+    );
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
     };
-
-    handleFormSubmit = event => {
-        event.preventDefault();
-        if(!this.state.fullName || this.state.email) {
-            alert("Please enter your name and email address.")
-        }
-    }
-    
-
-
-
-    render() {
-        return (
-            <form className="form">
-            <h1>Contact me</h1>
-                <section className="field">
-                    <label className="label">Name</label>
-                    <div className="control">
-                        <input className="input" name="fullName" type="text"/>
-                     </div>
-                </section>
-
-                <section className="field">
-                <label className="label">Email</label>
-                <div className="control has-icons-left has-icons-right">
-                    <input className="input" type="email" name="email" placeholder="someone@example.com"/>
-                    <span className="icon is-small is-left">
-                    <i className="fas fa-envelope"></i>
-                    </span>
-                    <span className="icon is-small is-right">
-                    <i className="fas fa-exclamation-triangle"></i>
-                    </span>
-                </div>
-                </section>
-
-                <section className="field">
-                    <label className="label">Message</label>
-                    <div className="control">
-                        <textarea className="textarea" name="message" placeholder="Type your message here"></textarea>
-                    </div>
-                </section>
-                
-                <section className="field is-grouped">
-                    <div className="control">
-                        <button className="button is-link">Submit</button>
-                    </div>
-                    <div className="control">
-                        <button className="button is-link is-light">Cancel</button>
-                    </div>
-                </section>
-
-            </form>
-        )
-    }
-
+    xhr.send(data);
+  }
 }
-
-
-export default Contact
