@@ -1,5 +1,5 @@
 import React from "react";
-
+import NavBar from '../components/NavBar'
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -12,6 +12,7 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     return (
+      <>
       <form
         className="form"
         onSubmit={this.submitForm}
@@ -32,7 +33,9 @@ export default class Contact extends React.Component {
         {status === "SUCCESS" ? <p>Thanks!</p> : <button className="button is-link">Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
+      </>
     );
+ 
   }
 
   submitForm(ev) {

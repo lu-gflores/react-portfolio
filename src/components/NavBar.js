@@ -1,38 +1,37 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom'
-import '../styles/NavBar.css'
+import { Link, useLocation } from 'react-router-dom'
+// import '../styles/NavBar.css'
 
 const NavBar = () => {
 
   const [isActive, setisActive] = useState(false);
+  const location = useLocation();
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <Link className="navbar-brand" to="/">
-          George Flores
-        </Link>
 
-        {/*Need to set up hamburger style for links*/}
-        <label 
-        onClick= {()=>setisActive(!isActive)}
-        role="button" 
-        className={`navbar-burger burger ${isActive ? "is-active" : ""}`} 
-        aria-label="menu" 
-        aria-expanded="false"
-        htmlFor="nav-toggle-state">
+    <nav className="navbar is-dark " role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        {/*BurgerMenu*/}
+        <a 
+          onClick= {()=>setisActive(!isActive)}
+          role="button" 
+          className={`navbar-burger burger ${isActive ? "is-active" : ""}`} 
+          aria-label="menu" 
+          aria-expanded="false"
+          htmlFor="nav-toggle-state"
+          >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </label>
+        </a>
       </div>
 
         <div  className={`navbar-menu ${isActive ? "is-active" : ""}`}>
           <ul className="navbar-end">
             <li className='navbar-item'>
               <Link to='/'
-                className={window.location.pathname === '/' || window.location.pathname === '/about'
-                  ? 'nav-link active' : 'nav-link'
+                className={location.pathname === '/' || location.pathname === '/about'
+                  ? 'nav-link is-active' : 'nav-link'
                 }
               >
                 About
@@ -41,8 +40,7 @@ const NavBar = () => {
             
             <li className='navbar-item'>
               <Link to='/portfolio'
-                className={window.location.pathname === '/' || window.location.pathname === '/portfolio'
-                  ? 'nav-link active' : 'nav-link'
+                className={location.pathname === '/portfolio' ? 'nav-link is-active' : 'nav-link'
                 }
               >
                 Portfolio
@@ -51,8 +49,7 @@ const NavBar = () => {
             </li>
             <li className='navbar-item'>
               <Link to='/contact'
-                className={window.location.pathname === '/' || window.location.pathname === '/contact'
-                  ? 'nav-link active' : 'nav-link'
+                className={location.pathname === '/contact' ? 'nav-link is-active' : 'nav-link'
                 }
               >
                 Contact

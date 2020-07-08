@@ -2,10 +2,3 @@
     display: none;
   }
   
-  #nav-toggle-state:checked ~ .navbar-menu {
-    display: block;
-  } */
-
-span, .nav-link, .navbar-brand{
-    color: white
-}

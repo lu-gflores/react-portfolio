@@ -1,14 +1,14 @@
+* {
+  box-sizing: border-box;
+}
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-body {
-  background: #000 url('../images/background.jpg') no-repeat center center/cover;
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+html {
+  font-family: 'Poppins', Lato, Tahoma, sans-serif;
+  width: 100%;
+  min-height: 100%;
 }
