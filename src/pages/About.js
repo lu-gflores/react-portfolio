@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 import Avatar from "../images/avatar.jpg"
 import TrailHeads from "../images/homePage.jpg"
 import ShopByYou from '../images/shopByYou.jpg'
@@ -47,14 +48,20 @@ const About = () => {
                     </figure>
 
                   </div>
-                  <div className="card-content">
+                  <div className="card-content has-text-centered">
                   
-                    <button className="button is-medium">
+                    <a className="button is-medium" href="https://github.com/lu-gflores/TrailHeads" target="_blank">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
-                    </button>
+                    </a>
+                    <a className="button is-medium" href="https://lu-gflores.github.io/TrailHeads/" target="_blank">
+                      <span className="icon">
+                        <i className="fa fa-rocket"></i>
+                      </span>
+                      <span>Link</span>
+                    </a>
                   </div>
 
                 </section>
@@ -69,14 +76,21 @@ const About = () => {
                       <img src={ShopByYou} alt="TrailHeads app" />
                     </figure>
                   </div>
-                  <div className="card-content">
-
-                    <button className="button is-medium">
+                  <div className="card-content has-text-centered">
+                      
+                     <a className="button is-medium" href="https://github.com/lu-gflores/ShopByYou" target="_blank">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
-                    </button>
+                    </a>
+
+                    <a className="button is-medium" href="https://shopbyyou.herokuapp.com/" target="_blank">
+                      <span className="icon">
+                        <i className="fa fa-rocket"></i>
+                      </span>
+                      <span>Link</span>
+                    </a>
                   </div>
 
                 </section>
@@ -86,7 +100,7 @@ const About = () => {
           </div>
 
           <div className="has-text-centered">
-            <button className="button is-info is-rounded">See more here!</button>
+            <NavLink className="button is-info is-rounded" to='/portfolio'>See more here!</NavLink>
           </div>
           
 
