@@ -5,3 +5,6 @@
 #nav-toggle-state:checked ~ .navbar-menu {
   display: block;
 } */
+nav {
+  opacity: 0.8;
+}

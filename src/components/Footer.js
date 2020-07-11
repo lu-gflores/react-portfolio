@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Footer.css'
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer has-background-dark">
 
         <p>
         <a className="social-links" href="https://www.linkedin.com/in/george-flores-a84b24157/" target="_blank"><i className="icon-link fab fa-linkedin"></i></a>
@@ -11,7 +11,7 @@ const Footer = () => {
                 <p className="white">&copy; Copyright 2020. Created by George Flores</p>
         </p>
 
-        </div>
+        </footer>
     )
 }
 export default Footer;

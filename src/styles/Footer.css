@@ -1,12 +1,13 @@
 
 .footer {
-    bottom: 0;
+    /* bottom: 0; */
     padding: 0;
     line-height: 25px;
     text-align: center;
-    background: #1f2c6c;
+    /* position: absolute; */
     color: whitesmoke;
     padding-top: 2rem;
+    width: 100%;
   }
   
   .footer a {

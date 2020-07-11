@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box;
 }
-.container {
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url('../images/backgroundImg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 /* html {

@@ -10,8 +10,7 @@ const MainContent = () => {
         <div>
          <Router>  
            <NavBar/>  
-          <Route exact path='/' component={About} />
-          
+          <Route exact path='/' component={About} />  
           <Route exact path="/contact" component={Contact} />
          <Route exact path="/portfolio" component={Portfolio} />   
          </Router>
