@@ -4,13 +4,14 @@ import NavBar from '../components/NavBar'
 import About from '../pages/About'
 import Portfolio from  '../pages/Portfolio'
 import Contact from '../pages/Contact'
+import '../styles/MainContent.css'
 const MainContent = () => {
     return (
         <div>
          <Router>  
-             <NavBar/>
+           <NavBar/>  
           <Route exact path='/' component={About} />
-          <Route exact path = '/about' component={About}/>
+          
           <Route exact path="/contact" component={Contact} />
          <Route exact path="/portfolio" component={Portfolio} />   
          </Router>

@@ -1,65 +1,64 @@
-import React, {useState} from 'react';
-import { Link, useLocation } from 'react-router-dom'
-// import '../styles/NavBar.css'
+import React, {useState, useLocation} from 'react';
+import { NavLink} from 'react-router-dom'
+import '../styles/NavBar.css'
 
 const NavBar = () => {
 
   const [isActive, setisActive] = useState(false);
-  const location = useLocation();
+  //const location = useLocation();
 
   return (
+    <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div className="navbar-brand">
+   
+    <a 
+    role="button" 
+    className={`navbar-burger burger ${isActive ? "is-active" : ''}`} 
+    aria-label="menu" 
+    aria-expanded="false" 
+    data-target="navbarBasicExample"
+    onClick={() =>setisActive(!isActive)}
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-    <nav className="navbar is-dark " role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        {/*BurgerMenu*/}
-        <a 
-          onClick= {()=>setisActive(!isActive)}
-          role="button" 
-          className={`navbar-burger burger ${isActive ? "is-active" : ""}`} 
-          aria-label="menu" 
-          aria-expanded="false"
-          htmlFor="nav-toggle-state"
-          >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+  <div id="navbarBasicExample" className={`navbar-menu ${isActive ? "is-active" : ''}`}>
+    <div className="navbar-end">
+      <NavLink className='navbar-item has-text-centered'
+      to='/'
+      onClick={()=>{
+            setisActive(!isActive)
+          }}  
+      >
+        About
+      </NavLink>
 
-        <div  className={`navbar-menu ${isActive ? "is-active" : ""}`}>
-          <ul className="navbar-end">
-            <li className='navbar-item'>
-              <Link to='/'
-                className={location.pathname === '/' || location.pathname === '/about'
-                  ? 'nav-link is-active' : 'nav-link'
-                }
-              >
-                About
-          </Link>
-            </li>
-            
-            <li className='navbar-item'>
-              <Link to='/portfolio'
-                className={location.pathname === '/portfolio' ? 'nav-link is-active' : 'nav-link'
-                }
-              >
-                Portfolio
-          </Link>
+      <NavLink className="navbar-item has-text-centered"
+      to='/portfolio'
+      onClick={()=>{
+            setisActive(!isActive)
+          }}  
+      >
+        Portfolio
+      </NavLink>
 
-            </li>
-            <li className='navbar-item'>
-              <Link to='/contact'
-                className={location.pathname === '/contact' ? 'nav-link is-active' : 'nav-link'
-                }
-              >
-                Contact
-          </Link>
-            </li>
-          </ul>
-        </div>
-    </nav>
+     
+      <NavLink className="navbar-item has-text-centered"
+      to='/contact'
+      onClick={()=>{
+            setisActive(!isActive)
+          }}  
+      >
+          Contact
+      </NavLink> 
+      
+    </div>
 
-
+  </div>
+</nav>
   )
 }
 
