@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 .button {
     margin: 1rem;
 }
+
 .is-fluid {
     margin-top: 3rem;
     padding: 8rem;
     background-image: url('../images/backgroundImg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 h1 {
     font-family: 'Righteous', cursive;
-    color: cornflowerblue;
 }

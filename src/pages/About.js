@@ -13,17 +13,17 @@ const iconStyle = {
 const About = () => {
   return (
     <>
-      <div className="container is-fluid has-text-centered">
-      <figure className="image is-128x128 is-inline-block">
+      <div className="container is-fluid has-text-centered" >
+      <figure className="image is-128x128 is-inline-block" data-aos="fade-up">
                   <img className="is-rounded" src={Avatar} alt="Avatar of George Flores" />
           </figure>
-          <h1 className="title is-1 has-text-white">Hey there, I'm George.</h1>
-          <h1 className="title is-2 has-text-white">A Full Stack Developer</h1>
+          <h1 className="title is-1 has-text-white" data-aos="fade-up">Hey there, I'm George.</h1>
+          <h1 className="title is-2 has-text-white" data-aos="fade-up">A Full Stack Developer</h1>
       </div>
         
 
 
-      <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <section data-aos="fade-right" data-aos-anchor-placement="center-bottom">
         <div className="column is-8 is-offset-2">
           <div className="card article card-shadow">
             <div className="card-content">
