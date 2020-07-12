@@ -55,6 +55,10 @@ const NavBar = () => {
           Contact
       </NavLink> 
       
+      <NavLink className="navbar-item has-text-centered" to="/">
+          Resume
+      </NavLink>
+
     </div>
 
   </div>
