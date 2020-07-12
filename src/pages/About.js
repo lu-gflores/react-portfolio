@@ -4,28 +4,42 @@ import Avatar from "../images/avatar.jpg"
 import TrailHeads from "../images/homePage.jpg"
 import ShopByYou from '../images/shopByYou.jpg'
 import '../styles/About.css'
+
 const iconStyle = {
   color: 'black'
 }
+ 
 
 const About = () => {
   return (
     <>
-      <section>
+      <div className="container is-fluid has-text-centered">
+      <figure className="image is-128x128 is-inline-block">
+                  <img className="is-rounded" src={Avatar} alt="Avatar of George Flores" />
+          </figure>
+          <h1 className="title is-1 has-text-white">Hey there, I'm George.</h1>
+          <h1 className="title is-2 has-text-white">A Full Stack Developer</h1>
+      </div>
+        
+
+
+      <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div className="column is-8 is-offset-2">
           <div className="card article card-shadow">
             <div className="card-content">
-              <div classname="media">
+              <div className="media">
                 <article className="media-content has-text-centered">
-                  <figure className="image is-128x128 is-inline-block">
-                    <img className="is-rounded" src={Avatar} alt="Avatar of George Flores" />
-                  </figure>
+                  
                   <p className="title article-title">About me</p>
                   <div className="tags has-addons level-item">
                     <a className="social-links" href="https://www.linkedin.com/in/george-flores-a84b24157/" target="_blank"><i style={iconStyle} className="icon-link fab fa-linkedin"></i></a>
                     <a className="social-links" href="https://github.com/lu-gflores" target="_blank"><i style={iconStyle} className="icon-link fab fa-github"></i></a>
                     <a href="mailto:georgeflores886@gmail.com" className="social-links"><i style={iconStyle} className="icon-link fas fa-envelope"></i></a>
                   </div>
+                  <p className="subtitle is-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                  culpa qui officia deserunt mollit anim id est laborum."</p>
                 </article>
               </div>
             </div>
@@ -34,7 +48,7 @@ const About = () => {
       </section>
       {/* top projects */}
       <div className="column is-8 is-offset-2">
-        <section className="card">
+        <section className="card" data-aos="fade-up" data-aos-placement="bottom-bottom">
           <div className="card-content">
             <h1 className="title has-text-centered">Projects</h1>
 
@@ -73,7 +87,7 @@ const About = () => {
                 <section className="card">
                   <div className="card-image">
                     <figure className="image is-4by3">
-                      <img src={ShopByYou} alt="TrailHeads app" />
+                      <img src={ShopByYou} alt="ShopByYou app" />
                     </figure>
                   </div>
                   <div className="card-content has-text-centered">
