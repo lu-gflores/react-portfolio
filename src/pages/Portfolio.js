@@ -22,13 +22,13 @@ const Portfolio = () => {
                   </div>
                   <div className="card-content has-text-centered">
                   
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Day-Planner" target="_blank">
+                    <a className="button is-medium" href="https://github.com/lu-gflores/Day-Planner" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
                     </a>
-                    <a className="button is-medium" href="https://lu-gflores.github.io/Day-Planner/" target="_blank">
+                    <a className="button is-medium" href="https://lu-gflores.github.io/Day-Planner/" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-rocket"></i>
                       </span>
@@ -50,13 +50,13 @@ const Portfolio = () => {
                   </div>
                   <div className="card-content has-text-centered">
                   
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Note-Taker" target="_blank">
+                    <a className="button is-medium" href="https://github.com/lu-gflores/Note-Taker" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
                     </a>
-                    <a className="button is-medium" href="https://server-note-taker.herokuapp.com/" target="_blank">
+                    <a className="button is-medium" href="https://server-note-taker.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-rocket"></i>
                       </span>
@@ -78,13 +78,13 @@ const Portfolio = () => {
                   </div>
                   <div className="card-content has-text-centered">
                   
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Employee-Directory" target="_blank">
+                    <a className="button is-medium" href="https://github.com/lu-gflores/Employee-Directory" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
                     </a>
-                    <a className="button is-medium" href=" https://lu-gflores.github.io/Employee-Directory/" target="_blank">
+                    <a className="button is-medium" href=" https://lu-gflores.github.io/Employee-Directory/" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-rocket"></i>
                       </span>
@@ -107,13 +107,13 @@ const Portfolio = () => {
                   </div>
                   <div className="card-content has-text-centered">
                   
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Fitness-Tracker" target="_blank">
+                    <a className="button is-medium" href="https://github.com/lu-gflores/Fitness-Tracker" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
                     </a>
-                    <a className="button is-medium" href=" https://peaceful-plains-60500.herokuapp.com/" target="_blank">
+                    <a className="button is-medium" href=" https://peaceful-plains-60500.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-rocket"></i>
                       </span>

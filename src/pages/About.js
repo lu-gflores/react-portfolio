@@ -32,9 +32,9 @@ const About = () => {
                   
                   <p className="title article-title">About me</p>
                   <div className="tags has-addons level-item">
-                    <a className="social-links" href="https://www.linkedin.com/in/george-flores-a84b24157/" target="_blank"><i style={iconStyle} className="icon-link fab fa-linkedin"></i></a>
-                    <a className="social-links" href="https://github.com/lu-gflores" target="_blank"><i style={iconStyle} className="icon-link fab fa-github"></i></a>
-                    <a href="mailto:georgeflores886@gmail.com" className="social-links"><i style={iconStyle} className="icon-link fas fa-envelope"></i></a>
+                    <a className="social-links" href="https://www.linkedin.com/in/george-flores-a84b24157/" target="_blank" rel="noopener noreferrer"><i style={iconStyle} className="icon-link fab fa-linkedin"></i></a>
+                    <a className="social-links" href="https://github.com/lu-gflores" target="_blank" rel="noopener noreferrer"><i style={iconStyle} className="icon-link fab fa-github"></i></a>
+                    <a href="mailto:georgeflores886@gmail.com" className="social-links" ><i style={iconStyle} className="icon-link fas fa-envelope"></i></a>
                   </div>
                   <p className="subtitle is-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
@@ -64,13 +64,13 @@ const About = () => {
                   </div>
                   <div className="card-content has-text-centered">
                   
-                    <a className="button is-medium" href="https://github.com/lu-gflores/TrailHeads" target="_blank">
+                    <a className="button is-medium" href="https://github.com/lu-gflores/TrailHeads" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
                     </a>
-                    <a className="button is-medium" href="https://lu-gflores.github.io/TrailHeads/" target="_blank">
+                    <a className="button is-medium" href="https://lu-gflores.github.io/TrailHeads/" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-rocket"></i>
                       </span>
@@ -92,14 +92,14 @@ const About = () => {
                   </div>
                   <div className="card-content has-text-centered">
                       
-                     <a className="button is-medium" href="https://github.com/lu-gflores/ShopByYou" target="_blank">
+                     <a className="button is-medium" href="https://github.com/lu-gflores/ShopByYou" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
                       </span>
                       <span>Code</span>
                     </a>
 
-                    <a className="button is-medium" href="https://shopbyyou.herokuapp.com/" target="_blank">
+                    <a className="button is-medium" href="https://shopbyyou.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-rocket"></i>
                       </span>
