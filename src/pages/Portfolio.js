@@ -7,8 +7,13 @@ import EmployeeDir from '../images/main.jpg'
 const Portfolio = () => {
     return (
         <>
-            <h1 className="title is-1 has-text-centered">Portfolio</h1>
-
+          <section className="hero is-dark is-large" data-aos="flip-left">
+            <div className="hero-body">
+              <h1 className="title is-1 has-text-centered">Portfolio</h1>
+            </div>
+            
+          </section>
+            
                 <div className="columns is-multiline">
 
                 <section className="column is-half is-offset" data-aos="fade-up-right">

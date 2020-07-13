@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
     const { status } = this.state;
     return (
       <>
-        <section className="hero is-fullheight">
+        <section className="hero is-fullheight" data-aos="zoom-in">
           <div className="hero-body">
             <div className="container has-text-centered">
               <div className="columns is-8 is-variable">
