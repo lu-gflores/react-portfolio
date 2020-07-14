@@ -3,6 +3,7 @@ import '../styles/Portfolio.css'
 import DayPlanner from '../images/dayplanner.JPG'
 import NoteTaker from '../images/note.jpg'
 import FitnessTracker from '../images/addingWorkout.JPG'
+import TeamGen from '../images/teampage.jpg'
 import EmployeeDir from '../images/main.jpg'
 const Portfolio = () => {
     return (
@@ -14,7 +15,7 @@ const Portfolio = () => {
             </div>
           </section>
    
-          <section className="hero is-medium is-primary">
+          <section className="hero is-medium is-light">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="zoom-in">Let's Guess</h1>
                <figure className="image">
@@ -23,7 +24,7 @@ const Portfolio = () => {
                 <div className="content has-text-centered">
                 <article className="project-info">
                   <p className="subtitle is-5">A full stack app that allows users to guess who is who from a selection of characters to which questions
-                are chosen based on their characteristics (hair color, wearing glasses, interesting facts, etc.)</p>
+                are chosen based on their characteristics (hair color, wearing glasses, interesting facts, etc.) Technologies used include React, NodeJS, Express, Mongoose, MongoDB, and Bulma CSS</p>
                 </article>
                 <a className="button is-medium" href="https://github.com/lynseahoss/Lets-Guess" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
@@ -42,13 +43,17 @@ const Portfolio = () => {
           </section>
 
 
-          <section className="hero is-medium is-warning">
+          <section className="hero is-medium is-dark">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="zoom-out">Fitness Tracker</h1>
                <figure className="image">
                   <img className="project-image" src={FitnessTracker} alt="Fitness Tracker app" style={{ width: "750px", height: "400px" }} data-aos="zoom-out"/>
                 </figure>
                 <div className="content has-text-centered">
+                <article className="project-info">
+                  <p className="subtitle is-5">A fitness app that trackers users' progress in their daily workout. They can log and track mulitiple exercises in a workout session based
+                  on the given day. Technolgies used include NodeJS, Mongoose and Express.</p>
+                </article>
                 <a className="button is-medium" href="https://github.com/lu-gflores/Fitness-Tracker" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
@@ -65,7 +70,35 @@ const Portfolio = () => {
             </div>
           </section>
 
+          <section className="hero is-medium is-danger">
+            <div className="hero-body">
+            <h1 className="title is-1 has-text-centered" data-aos="flip-right">Team Generator</h1>
+               <figure className="image">
+                  <img className="project-image" src={TeamGen} alt="Team Profile Generator app" style={{ width: "750px", height: "400px" }} data-aos="flip-right"/>
+                </figure>
+                <div className="content has-text-centered">
+                <article className="project-info">
+                  <p className="subtitle is-5">A Node CLI that generates a team by inputing a team manager, team members, and each team member's roles, which then 
+                  generates an html file to display the roster based on information provided. Technologies used in include NodeJS and Inquirier package. </p>
+                </article>
+                <a className="button is-medium" href="https://github.com/lu-gflores/Team-Profile-Generator" target="_blank" rel="noopener noreferrer">
+                      <span className="icon">
+                        <i className="fa fa-code"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                    <button className="button is-medium" title="Must be cloned from repo to run" disabled target="_blank" rel="noopener noreferrer">
+                      <span className="icon">
+                        <i className="fa fa-rocket"></i>
+                      </span>
+                      <span>Demo</span>
+                    </button>
+                </div>
+            </div>
+          </section>
 
+        
+        
       
 
           <section className="hero is-medium is-primary">
@@ -75,7 +108,11 @@ const Portfolio = () => {
                   <img className="project-image" src={DayPlanner} style={{ width: "750px", height: "400px" }} alt="Dayplanner app" data-aos="flip-right"/>
                 </figure>
                 <div className="content has-text-centered">
-                  
+                <article className="project-info">
+                  <p className="subtitle is-5">A schedule app that allows users to log hourly events from (9am to 5pm) so they can manage their time more efficiently. Their events
+                  is saved in local storage. Meaning after closing their web browser, their input is still saved when they return to the application.
+                  Technologies used include BootStrap and jQuery.</p>
+                </article>
                   <a className="button is-medium" href="https://github.com/lu-gflores/Day-Planner" target="_blank" rel="noopener noreferrer">
                     <span className="icon">
                       <i className="fa fa-code"></i>
@@ -94,14 +131,17 @@ const Portfolio = () => {
 
 
 
-           <section className="hero is-medium is-dark">
+           <section className="hero is-medium is-light">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="flip-left">Note Taker</h1>
                <figure className="image">
                   <img className="project-image" src={NoteTaker} alt="Note Taker app" style={{ width: "750px", height: "400px" }} data-aos="flip-left"/>
                 </figure>
                 <div className="content has-text-centered">
-                  
+                <article className="project-info">
+                  <p className="subtitle is-5">A note taking app that allows users to write, save, and delete notes. This uses a backend server to store and retrieve
+                  data from a JSON file. Technologies used include Express, NodeJS, and BootStrap.</p>
+                </article>
                 <a className="button is-medium" href="https://github.com/lu-gflores/Note-Taker" target="_blank" rel="noopener noreferrer">
                       <span className="icon">
                         <i className="fa fa-code"></i>
