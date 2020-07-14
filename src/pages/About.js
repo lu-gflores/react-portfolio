@@ -1,6 +1,6 @@
 import React from "react";
-import {NavLink} from 'react-router-dom'
 import Me from '../components/Me'
+import Recent from '../components/Recent'
 import Avatar from "../images/avatar.jpg"
 import TrailHeads from "../images/homePage.jpg"
 import ShopByYou from '../images/shopByYou.jpg'
@@ -22,14 +22,15 @@ const About = () => {
       </div>
         
       <Me/>
-      {/* top projects */}
-      <div className="column is-8 is-offset-2">
+      <Recent/>
+   
+      {/* <div className="column is-8 is-offset-2">
         <section className="card" data-aos="fade-up" data-aos-placement="bottom-bottom">
           <div className="card-content">
             <h1 className="title has-text-centered">Projects</h1>
 
             <div className="columns">
-              {/* TrailHeads */}
+          
               <article className="column is-half">
                 <section className="card">
                   <div className="card-image">
@@ -58,7 +59,7 @@ const About = () => {
               </article>
 
 
-              {/* Shop By You */}
+          
               <article className="column is-half">
                 <section className="card">
                   <div className="card-image">
@@ -95,7 +96,7 @@ const About = () => {
           
 
         </section>
-      </div>
+      </div> */}
 
     </>
 
