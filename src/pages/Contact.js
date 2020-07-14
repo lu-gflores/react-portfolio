@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
               <div className="columns is-8 is-variable">
                 <article className="column is-two-thirds has-text-left">
                   <h1 className="title is-1">Contact Me</h1>
-                  <p className="is-size-4">Want to reach out to me? Fill in your information and I'll respond as soon as possible!</p>
+                  <p className="is-size-4">Want to reach out to me? Fill out this form and I'll respond as soon as possible!</p>
                 </article>
                 <div className="column is-one-third has-text-left">
                   <form

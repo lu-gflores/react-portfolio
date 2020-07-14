@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 /* #nav-toggle-state {
   display: none;
 }
@@ -5,3 +6,8 @@
 #nav-toggle-state:checked ~ .navbar-menu {
   display: block;
 } */
+
+.navbar-item {
+    font-family: 'Righteous', cursive;
+
+}

@@ -17,8 +17,11 @@ const About = () => {
       <figure className="image is-128x128 is-inline-block" data-aos="fade-up">
                   <img className="is-rounded" src={Avatar} alt="Avatar of George Flores" />
           </figure>
-          <h1 className="title is-1 has-text-white" data-aos="fade-up">Hey there, I'm George.</h1>
-          <h1 className="title is-2 has-text-white" data-aos="fade-up">A Full Stack Developer</h1>
+
+          <article className="intro-body is-rounded" data-aos="fade-up">
+            <h1 className="title is-1 has-text-white-ter" >Hey there, I'm George.</h1>
+          <h1 className="title is-2 has-text-white">A Full Stack Developer</h1>
+          </article>
       </div>
         
 

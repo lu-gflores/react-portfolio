@@ -1,3 +1,13 @@
-h1 {
- 
+figure {
+    align-self: center;
+    margin: 0 auto;
+
 }
+.project-image {
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
