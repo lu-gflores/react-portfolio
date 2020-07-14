@@ -42,7 +42,6 @@ const Portfolio = () => {
             </div>
           </section>
 
-
           <section className="hero is-medium is-dark">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="zoom-out">Fitness Tracker</h1>
@@ -124,10 +123,6 @@ const Portfolio = () => {
             </div>
           </section>
 
-        
-        
-      
-
           <section className="hero is-medium is-primary">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="flip-right">Day Planner</h1>
@@ -156,8 +151,6 @@ const Portfolio = () => {
             </div>
           </section>
 
-
-
            <section className="hero is-medium is-light">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="flip-left">Note Taker</h1>
@@ -184,128 +177,7 @@ const Portfolio = () => {
                 </div>
             </div>
           </section>
-
-
-
-
-                {/* <div className="columns is-multiline">
-
-                <section className="column is-half is-offset" data-aos="fade-up-right">
-                <section className="card">
-                <header className="title has-text-centered">Day Planner</header>
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src={DayPlanner} alt="Dayplanner app" />
-                    </figure>
-
-                  </div>
-                  <div className="card-content has-text-centered">
-                  
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Day-Planner" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-code"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                    <a className="button is-medium" href="https://lu-gflores.github.io/Day-Planner/" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-rocket"></i>
-                      </span>
-                      <span>Link</span>
-                    </a>
-                  </div>
-
-                </section>
-            </section>
-                
-                <section className="column is-half is-offset-6" data-aos="fade-up-left">
-                <section className="card">
-                <header className="title has-text-centered">Note Taker</header>
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src={NoteTaker} alt="NoteTaker app" />
-                    </figure>
-
-                  </div>
-                  <div className="card-content has-text-centered">
-                  
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Note-Taker" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-code"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                    <a className="button is-medium" href="https://server-note-taker.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-rocket"></i>
-                      </span>
-                      <span>Link</span>
-                    </a>
-                  </div>
-                </section>
-
-                </section>
         
-                <section className="column is-half is-offset" data-aos="fade-up-right">
-                <section className="card">
-                <header className="title has-text-centered">React Employee Directory</header>
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src={EmployeeDir} alt="Dayplanner app" />
-                    </figure>
-
-                  </div>
-                  <div className="card-content has-text-centered">
-                  
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Employee-Directory" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-code"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                    <a className="button is-medium" href=" https://lu-gflores.github.io/Employee-Directory/" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-rocket"></i>
-                      </span>
-                      <span>Link</span>
-                    </a>
-                  </div>
-
-                </section>
-            </section>
-                
-
-            <section className="column is-half is-offset-6" data-aos="fade-up-left">
-                <section className="card">
-                <header className="title has-text-centered">Fitness Tracker</header>
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src={FitnessTracker} alt="NoteTaker app" />
-                    </figure>
-
-                  </div>
-                  <div className="card-content has-text-centered">
-                  
-                    <a className="button is-medium" href="https://github.com/lu-gflores/Fitness-Tracker" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-code"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                    <a className="button is-medium" href=" https://peaceful-plains-60500.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                      <span className="icon">
-                        <i className="fa fa-rocket"></i>
-                      </span>
-                      <span>Link</span>
-                    </a>
-                  </div>
-                </section>
-            </section>
-
-
-
-
-            </div> */}
         </>
     )
 }
