@@ -23,7 +23,7 @@ const Portfolio = () => {
                 </figure>
                 <div className="content has-text-centered">
                 <article className="project-info">
-                  <p className="subtitle is-5">A full stack app that allows users to guess who is who from a selection of characters to which questions
+                  <p className="subtitle is-5" data-aos="zoom-in">A full stack app that allows users to guess who is who from a selection of characters to which questions
                 are chosen based on their characteristics (hair color, wearing glasses, interesting facts, etc.) Technologies used include React, NodeJS, Express, Mongoose, MongoDB, and Bulma CSS</p>
                 </article>
                 <a className="button is-medium" href="https://github.com/lynseahoss/Lets-Guess" target="_blank" rel="noopener noreferrer">
@@ -70,6 +70,33 @@ const Portfolio = () => {
             </div>
           </section>
 
+          <section className="hero is-medium is-light">
+            <div className="hero-body">
+            <h1 className="title is-1 has-text-centered" data-aos="fade-up">Employee Directory</h1>
+               <figure className="image">
+                  <img className="project-image" src={EmployeeDir} alt="Employee Directory app" style={{ width: "750px", height: "400px" }} data-aos="fade=-up"/>
+                </figure>
+                <div className="content has-text-centered">
+                <article className="project-info">
+                  <p className="subtitle is-5" data-aos="fade-up">A simple directory that searches specific employees based on name and sorts by email. The purpose of this project
+                  is to learn the basics of React such as breaking down the UI in several components and manage the application's state.</p>
+                </article>
+                <a className="button is-medium" href="https://github.com/lu-gflores/Employee-Directory" target="_blank" rel="noopener noreferrer">
+                      <span className="icon">
+                        <i className="fa fa-code"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                    <a className="button is-medium" href="https://lu-gflores.github.io/Employee-Directory/" target="_blank" rel="noopener noreferrer">
+                      <span className="icon">
+                        <i className="fa fa-rocket"></i>
+                      </span>
+                      <span>Demo</span>
+                    </a>
+                </div>
+            </div>
+          </section>
+
           <section className="hero is-medium is-danger">
             <div className="hero-body">
             <h1 className="title is-1 has-text-centered" data-aos="flip-right">Team Generator</h1>
@@ -78,7 +105,7 @@ const Portfolio = () => {
                 </figure>
                 <div className="content has-text-centered">
                 <article className="project-info">
-                  <p className="subtitle is-5">A Node CLI that generates a team by inputing a team manager, team members, and each team member's roles, which then 
+                  <p className="subtitle is-5" data-aos="flip-right">A Node CLI that generates a team by inputing a team manager, team members, and each team member's roles, which then 
                   generates an html file to display the roster based on information provided. Technologies used in include NodeJS and Inquirier package. </p>
                 </article>
                 <a className="button is-medium" href="https://github.com/lu-gflores/Team-Profile-Generator" target="_blank" rel="noopener noreferrer">
@@ -109,7 +136,7 @@ const Portfolio = () => {
                 </figure>
                 <div className="content has-text-centered">
                 <article className="project-info">
-                  <p className="subtitle is-5">A schedule app that allows users to log hourly events from (9am to 5pm) so they can manage their time more efficiently. Their events
+                  <p className="subtitle is-5" data-aos="flip-right">A schedule app that allows users to log hourly events from (9am to 5pm) so they can manage their time more efficiently. Their events
                   is saved in local storage. Meaning after closing their web browser, their input is still saved when they return to the application.
                   Technologies used include BootStrap and jQuery.</p>
                 </article>
