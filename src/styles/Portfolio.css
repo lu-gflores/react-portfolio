@@ -1,13 +1,22 @@
 figure {
-    align-self: center;
+    align-content: center;
     margin: 0 auto;
 
+}
+.project-info {
+    padding-top: 1rem;
+    
+    text-align: center;
 }
 .project-image {
     border-radius: 1rem;
     max-width: 100%;
     height: auto;
-    
+    align-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
 }
 
 
