@@ -1,11 +1,11 @@
-import React, {useState, useLocation} from 'react';
+import React, {useState} from 'react';
 import { NavLink} from 'react-router-dom'
+import Resume from '../images/GeorgeFlores_Resume.pdf'
 import '../styles/NavBar.css'
 
 const NavBar = () => {
 
   const [isActive, setisActive] = useState(false);
-  //const location = useLocation();
 
   return (
     <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
@@ -55,7 +55,7 @@ const NavBar = () => {
           Contact
       </NavLink> 
       
-      <NavLink className="navbar-item has-text-centered" to="/">
+      <NavLink className="navbar-item has-text-centered" to={Resume} target="_blank">
           Resume
       </NavLink>
 
