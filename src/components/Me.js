@@ -1,5 +1,9 @@
 import React from 'react'
 import Avatar from "../images/avatar.jpg"
+import HTMLlogo from '../images/html5logo.png'
+import JavaScriptLogo from '../images/javascript.png'
+import CSSLogo from '../images/css3.png'
+import ReactLogo from '../images/reactlogo.png'
 import '../styles/Me.css'
 const Me = () => {
     const iconStyle = {
@@ -28,24 +32,37 @@ const Me = () => {
                 <div className="columns is-multiline">
                     <div className="column is-three-quarters">
                         <p className="subtitle is-4 intro has-text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            I'm a full stack developer and a Computer Science graduate of UNC Charlotte based around Charlotte, NC. 
-                            I have a diverse experience in
+                            I'm a full stack developer and a Computer Science graduate of UNC Charlotte based around Charlotte, NC. While I have a diverse background
+                            in the Computer Science field, I find myself drawn to the development field for its creativity, problem solving, and flexibility. 
                     </p>
                     </div>
 
                     <div className="column is-one-quarter">
                         <figure className="image" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                            <img className="is-rounded" src={Avatar} alt="Avatar of George Flores" style={{ width: "250px", height: "250px" }} />
+                            <img className="is-rounded" src={Avatar} alt="Avatar of George Flores" style={{ width: "250px", height: "250px", paddingBottom:"1rem" }} />
                         </figure>
                     </div>
 
                     <div className="column is-half">
-                        <p className="subtitle is-5 intro">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                    <h2 className="title is-3" data-aos="fade-right" data-aos-offset="200">What I can do</h2>
+                    <figure className="image is-128x128 is-inline-block" data-aos="fade-right" data-aos-offset="200">
+                         <img src={HTMLlogo} alt="html logo" />
+                    </figure>
+                    <figure className="image is-128x128 is-inline-block" data-aos="fade-right" data-aos-offset="200">
+                         <img src={CSSLogo} alt="css logo" />
+                    </figure>
+                    <figure className="image is-128x128 is-inline-block" data-aos="fade-right" data-aos-offset="200">
+                         <img src={JavaScriptLogo} alt="Javascript logo" />
+                    </figure>
+                    <figure className="image is-128x128 is-inline-block" data-aos="fade-right" data-aos-offset="200">
+                         <img src={ReactLogo} alt="React logo" />
+                    </figure>
+                    </div>
+
+                    <div className="column is-half">
+                        <p className="subtitle is-4 intro" data-aos="fade-left" data-aos-offset="200">
+                           While I experience in these set languages, I also have worked in different concepts in Full Stack, including MongoDB, NodeJS, Express, 
+                           Handlebars, and jQuery.
                     </p>
                     </div>
                 </div>

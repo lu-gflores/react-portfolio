@@ -68,10 +68,14 @@ const Recent = () => {
                 </div>
             </div>
         </section>
-        <div className="has-text-centered">
-            <NavLink className="button is-info is-rounded is-medium is-fullwidth" to='/portfolio'>See more here!</NavLink>
-          </div>
     </div>
+        <section className="columns is-mobile">
+        <div className="column is-three-fifths is-offset-one-fifth">
+            <NavLink className="button is-info is-rounded is-medium is-fullwidth" to='/portfolio'>See more here!</NavLink>
+        </div>
+            
+          </section>
+    
         </>
     )
 }
