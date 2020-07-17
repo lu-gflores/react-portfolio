@@ -7,7 +7,7 @@ This is my first personal portfolio built using React JS. The purpose of this re
 the Trilogy Bootcamp as well as experimenting with some of React's concepts. This contains some of my recent projects, about me, a contact page, and 
 my resume. 
 
-Deployed Link:
+Deployed Link: https://gfloresportfolio.herokuapp.com/
 
 ## Table of Contents
 
