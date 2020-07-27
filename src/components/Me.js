@@ -61,7 +61,7 @@ const Me = () => {
 
                     <div className="column is-half">
                         <p className="subtitle is-4 intro" data-aos="fade-left" data-aos-offset="200">
-                           While I experience in these set languages, I also have worked in different concepts in Full Stack, including MongoDB, NodeJS, Express, 
+                           While I have experience in these set languages, I also have worked in different concepts in Full Stack, including MongoDB, NodeJS, Express, 
                            Handlebars, and jQuery.
                     </p>
                     </div>
