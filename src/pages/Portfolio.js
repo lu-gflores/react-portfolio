@@ -5,6 +5,8 @@ import NoteTaker from '../images/note.jpg'
 import FitnessTracker from '../images/addingWorkout.JPG'
 import TeamGen from '../images/teampage.jpg'
 import EmployeeDir from '../images/main.jpg'
+import Scroll from '../components/Scroll'
+
 const Portfolio = () => {
     return (
         <>
@@ -202,7 +204,7 @@ const Portfolio = () => {
                 </div>
             </div>
           </section>
-        
+          <Scroll />
         </>
     )
 }
